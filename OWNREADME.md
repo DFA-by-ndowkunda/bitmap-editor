@@ -5,9 +5,9 @@ A bitmap editor is a program which allows users to paint and edit pictures inter
 This project models a bitmap editor in the CLI.
 
 ## Requirements
-(what you need: to run program)
--node.js
--npm (normally comes with Node.js)
+To run program
+*node.js
+*npm (normally comes with Node.js)
 
 # Quickstart
  1. fork this repo 
