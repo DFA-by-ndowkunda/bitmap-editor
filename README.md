@@ -61,6 +61,16 @@ S - Show the contents of the current image
 X - Terminate the session"
 ```
 
+- NB: Colours are represented by different characters.
+- Hint: one possible implementation could involve representing the MxN image as a nested array. For example you might represent a 3x3 White image as:
+```js
+[
+  ['O', 'O', 'O'],
+  ['O', 'O', 'O'],
+  ['O', 'O', 'O'],
+]
+```
+
 ### Extended Criteria
 
 1. Here's an additional command to implement:
@@ -68,6 +78,8 @@ X - Terminate the session"
 F X Y C - Fill the region R with the colour C. R is defined as: Pixel (X,Y) belongs to R. Any other pixel which is the same colour as (X,Y) and shares a common side with any pixel in R also belongs to this region.
 ```
 
-2. Write e2e tests to test your program works as expected from the command line.
+2. Handle errors gracefully for too many arguments, incorrect arguments, coordinates out of bounds, etc
+ 
+3. Write e2e tests to test your program works as expected from the command line.
 
-3. Publish your program as a node package to the NPM Registry
+4. Publish your program as a node package to the NPM Registry
