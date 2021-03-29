@@ -61,10 +61,9 @@ npx eslint --fix
 
 |Objects| Properties | Messages | Context | Output
 |----------|-------------|---------------|---------|---------
-|image  |pixels[][]@array|createImage   |            |image['O']@array 
-|            |pixel'O' @str     |                       |             |  
-|            |'C' @str             |clearTable       |             |image['O']@array
-|            | pixel(x,y)         |changeColour |             |image['C']@array 
+|image  |pixelgrid@array|             |            |image['O']@array 
+|            |pixel 'O' @str     |                       |             |  
+|            | colour 'C' @str             |clearTable       |             |image['O']@array
 |            | L @str              |changeColour |             |image['C']@array       
 |            | V@str              |changeColour |change vertical rows of array|image['C']@array      
 |            | H@str              |changeColour |change horizontal rows of array|image['C']@array  
@@ -72,19 +71,15 @@ npx eslint --fix
 |            |X@str               |exit                  |             |'program exited' @str        
 
 
-
-## Test cases
-```
-```
-
 # Usage
 
-
 ```
+
 ```  
 
 # Inspiration
 
+[Approach for creating nested array](https://github.com/digital-futures-academy/bitmap-editor-challenge/pull/1/commits/b4c3ca6f971adae674b4681d3d92433a83137c6a)
 https://graphics.fandom.com/wiki/Bitmap_graphics_editor
 
 https://rowanmanning.com/posts/writing-a-friendly-readme/ 

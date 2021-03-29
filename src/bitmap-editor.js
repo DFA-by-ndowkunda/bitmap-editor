@@ -1,4 +1,5 @@
 const os = require('os');
+const Image = require('./image.js');
 
 class BitmapEditor {
   constructor(display) {
@@ -15,6 +16,10 @@ class BitmapEditor {
 
       if (command === '?') {
         process.stdout.write(this.helpMessage());
+      } else if (command[0] === 'I') {
+        const args = command.split(' ')
+        this.image = new Image(Number(args[1]), Number(args[2]))
+        console.log(this.image.displayImage())
       } else if (command === 'X') {
         this.display.close()
       } else {
