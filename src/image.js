@@ -1,22 +1,38 @@
+const os = require('os');
 
 class Image {
-  constructor(M,N, C='O') {
-    this.pixelGrid = Array(M).fill('O').map(pixel => Array(N).fill('O'));
+
+  constructor(M, N) {
+    this.grid = Array(N).fill('O').map(pixel => Array(M).fill('O'));
   }
- 
-  displayImage() {
-    return this.pixelGrid
+
+  show() {
+    return this.grid.map(row => {
+      return row.join('');
+    }).join(os.EOL);
   }
-  
-  changeColour(M,N,color) {
-    for (let i = 0; i < M; i++) {
-      this.pixelGrid[i] = color
-      for (let j = 0; j < N; j++) {
-         this.pixelGrid[i][j] = color
+
+  clear() {
+    this.grid = Array(this.grid.length).fill('O').map(pixel => Array(this.grid[0].length).fill('O'));
+    return this.grid;
+  }
+
+  colour(X, Y,colour) {
+    return this.grid[X][Y] = colour;
+  }
+
+  colourVertical(column, row1, row2, colour) {
+    for (row1; row1<= row2; row1++){
+      this.colour(row1,column,colour);
     }
-    }
-    return this.pixelGrid
   }
- 
+
+  colourHorizontal(row, column1, column2, colour) {
+    for (column1; column1<= column2; column1++){
+      this.colour(row,column1,colour);
+    }
+  }
+
 }
-module.exports = Image
+
+module.exports = Image;

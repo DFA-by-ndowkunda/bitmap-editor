@@ -35,40 +35,42 @@ $ npx jasmine path/to/spec
 ```
 
 ## Linting code
+This project uses eslint to format code
 ```
 npx eslint --fix
 ```
  
 # Problem Approach 
-
+```
 ## Acceptance Criteria
 
->I M N - Create a new M x N image with all pixels coloured white (O).
+I M N - Create a new M x N image with all pixels coloured white (O).
 
->C - Clears the table, setting all pixels to white (O).
+C - Clears the table, setting all pixels to white (O).
 
->L X Y C - Colours the pixel (X,Y) with colour C.
+L X Y C - Colours the pixel (X,Y) with colour C.
 
->V X Y1 Y2 C - Draw a vertical segment of colour C in column X between rows Y1 and Y2 (inclusive).
+V X Y1 Y2 C - Draw a vertical segment of colour C in column X between rows Y1 and Y2 (inclusive).
 
->H X1 X2 Y C - Draw a horizontal segment of colour C in row Y between columns X1 and X2 (inclusive).
+H X1 X2 Y C - Draw a horizontal segment of colour C in row Y between columns X1 and X2 (inclusive).
 
->S - Show the contents of the current image
+S - Show the contents of the current image
 
->X - Terminate the session"
+X - Terminate the session"
+```
 
 ## Functional Representation Domain Model
 
 |Objects| Properties | Messages | Context | Output
 |----------|-------------|---------------|---------|---------
-|image  |pixelgrid@array|             |            |image['O']@array 
-|            |pixel 'O' @str     |                       |             |  
-|            | colour 'C' @str             |clearTable       |             |image['O']@array
-|            | L @str              |changeColour |             |image['C']@array       
-|            | V@str              |changeColour |change vertical rows of array|image['C']@array      
-|            | H@str              |changeColour |change horizontal rows of array|image['C']@array  
-|            |S@str                |displayImage  |             |image['C']@array  
-|            |X@str               |exit                  |             |'program exited' @str        
+|Image  |grid@array|             |creates image w/pixels 'O'           |image['O']@array 
+|            |                   |                       |             |  
+|            |                   |clear()      | resets all pixels in grid to 'O'            |image['O']@array
+|            |          |colour() | changes pixel at (X,Y) to another colour            |image['C']@array        
+|            |           |changeVertical() |change vertical rows of array to colour 'C' |image['C']@array      
+|            |              |changeHorizontal() |change horizontal rows of array to colour 'C'|image['C']@array  
+|            |               |show()  | displays current image            |image['C']@array  
+
 
 
 # Usage
