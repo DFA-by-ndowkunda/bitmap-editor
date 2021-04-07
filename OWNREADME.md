@@ -76,19 +76,28 @@ X - Terminate the session"
 # Usage
 After running ``` node index.js ```
  ``` I M N ``` will display contents of M x N array representing white pixels with 'O'. 
- [white pixels represented by 3 x 3 array](\media\BITMAP-USAGE-1.png)
+
+ ![white pixels represented by 3 x 3 array](\media\BITMAP-USAGE-1.png)
+
 ``` L X Y C``` will display contents of M x N array representing a colour change of pixel at X,Y with 'C'. 
-[pixel colour change represented in 3 x 3 array](\media\BITMAP-USAGE-2.png)
+
+![pixel colour change represented in 3 x 3 array](\media\BITMAP-USAGE-2.png)
+
 ``` V X Y1 Y2 C && S``` will display contents of M x N array representing colour change of pixels in vertical with 'C'. 
-[vertical colour change represented in 3 x 3 array](\media\BITMAP-USAGE-3.png)
+
+![vertical colour change represented in 3 x 3 array](\media\BITMAP-USAGE-3.png)
+
 ``` H Y X1 X2 C && S``` will display contents of M x N array representing colour change of pixels in horizontal with 'C'. 
-[horizontal colour change represented in 3 x 3 array](\media\BITMAP-USAGE-4.png)
+
+![horizontal colour change represented in 3 x 3 array](\media\BITMAP-USAGE-4.png)
+
 ``` C && S ``` will clear any changes to M x N array representing white pixels with 'O'. 
-[reset of image](\media\BITMAP-USAGE-5.png)
+
+![reset of image](\media\BITMAP-USAGE-5.png)
 
 # Inspiration
 
-[Approach for creating nested array](https://github.com/digital-futures-academy/bitmap-editor-challenge/pull/1/commits/b4c3ca6f971adae674b4681d3d92433a83137c6a)
+![Approach for creating nested array](https://github.com/digital-futures-academy/bitmap-editor-challenge/pull/1/commits/b4c3ca6f971adae674b4681d3d92433a83137c6a)
 https://graphics.fandom.com/wiki/Bitmap_graphics_editor
 
-https://rowanmanning.com/posts/writing-a-friendly-readme/ 
+![Readme format](https://rowanmanning.com/posts/writing-a-friendly-readme/)
