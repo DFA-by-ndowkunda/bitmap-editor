@@ -75,6 +75,7 @@ X - Terminate the session"
 
 # Usage
 After running ``` node index.js ```
+
  ``` I M N ``` will display contents of M x N array representing white pixels with 'O'. 
 
  ![white pixels represented by 3 x 3 array](/media/BITMAP-USAGE-1.png)
@@ -98,6 +99,7 @@ After running ``` node index.js ```
 # Inspiration
 
 [Approach for creating nested array](https://github.com/digital-futures-academy/bitmap-editor-challenge/pull/1/commits/b4c3ca6f971adae674b4681d3d92433a83137c6a)
-https://graphics.fandom.com/wiki/Bitmap_graphics_editor)
+
+[Bitmap Editor wiki](https://graphics.fandom.com/wiki/Bitmap_graphics_editor)
 
 [Readme format](https://rowanmanning.com/posts/writing-a-friendly-readme/)
