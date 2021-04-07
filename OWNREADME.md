@@ -23,7 +23,7 @@ To run program
  ```
  4. Run program
 ```
-node bitmap-editor.js
+node index.js
 ```
 
 ## Running Tests
@@ -41,8 +41,10 @@ npx eslint --fix
 ```
  
 # Problem Approach 
-```
+
 ## Acceptance Criteria
+
+```
 
 I M N - Create a new M x N image with all pixels coloured white (O).
 
@@ -71,13 +73,18 @@ X - Terminate the session"
 |            |              |changeHorizontal() |change horizontal rows of array to colour 'C'|image['C']@array  
 |            |               |show()  | displays current image            |image['C']@array  
 
-
-
 # Usage
-
-```
-
-```  
+After running ``` node index.js ```
+ ``` I M N ``` will display contents of M x N array representing white pixels with 'O'. 
+ [white pixels represented by 3 x 3 array](\media\BITMAP-USAGE-1.png)
+``` L X Y C``` will display contents of M x N array representing a colour change of pixel at X,Y with 'C'. 
+[pixel colour change represented in 3 x 3 array](\media\BITMAP-USAGE-2.png)
+``` V X Y1 Y2 C && S``` will display contents of M x N array representing colour change of pixels in vertical with 'C'. 
+[vertical colour change represented in 3 x 3 array](\media\BITMAP-USAGE-3.png)
+``` H Y X1 X2 C && S``` will display contents of M x N array representing colour change of pixels in horizontal with 'C'. 
+[horizontal colour change represented in 3 x 3 array](\media\BITMAP-USAGE-4.png)
+``` C && S ``` will clear any changes to M x N array representing white pixels with 'O'. 
+[reset of image](\media\BITMAP-USAGE-5.png)
 
 # Inspiration
 
